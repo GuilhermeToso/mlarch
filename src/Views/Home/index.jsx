@@ -2,8 +2,8 @@ import React from "react";
 import { HomeBody } from "../../Components/Body";
 import { GetStarted, LearnMore } from "../../Components/Buttons";
 import { HomeCard } from "../../Components/Cards";
-import { Title } from "../../Components/Texts";
-import { Description, ButtonLabel } from "../../Components/Texts";
+import { Title, Description, ButtonLabel } from "../../Components/Texts";
+
 function Home() {
     return (
         <HomeBody>
