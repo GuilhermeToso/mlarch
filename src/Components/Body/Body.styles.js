@@ -16,6 +16,9 @@ export const HomeBody = styled(Body)`
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 export const AboutBody = styled(Body)`
