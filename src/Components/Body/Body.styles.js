@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BACKGROUND } from "../../Constants";
+import { BREAKPOINTS } from "../../Constants";
 
 export const Body = styled.div`
     position: absolute;    
@@ -9,21 +9,37 @@ export const Body = styled.div`
 `
 
 export const HomeBody = styled(Body)`
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 14fr;
     grid-template-columns: 1fr;
-    background: url(${BACKGROUND}) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    grid-template-areas: 
+        "header"
+        "main";
+
+    @media (min-width:${BREAKPOINTS.xsm}) and (max-height:${BREAKPOINTS.sm}) {
+        grid-template-rows: 3fr 5fr;
+    }
+`
+// background: url(${BACKGROUND}) no-repeat center center fixed;
+// -webkit-background-size: cover;
+// -moz-background-size: cover;
+// -o-background-size: cover;
+// background-size: cover;
+// display: flex;
+// justify-content: center;
+// align-items: center;
+
+
+export const GeneralBody = styled(Body)`
+    grid-template-rows: 1fr 11fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                         "main"   
 `
 
-export const AboutBody = styled(Body)`
-    grid-template-rows: 80px auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header header"
-                         "text draw"   
+export const HeadMainBody = styled(Body)`
+    grid-template-rows: 1fr 15fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
 `
