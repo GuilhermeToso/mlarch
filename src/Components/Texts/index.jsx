@@ -1,3 +1,3 @@
-import { Title, Description, ButtonLabel } from "./Texts.styles";
+import { Title, Description, ButtonLabel} from "./Texts.styles";
 
-export { Title, Description, ButtonLabel }
+export { Title, Description, ButtonLabel}
