@@ -1,5 +1,5 @@
-import { Body, HomeBody, AboutBody } from "./Body.styles";
+import { Body, HomeBody, GeneralBody, HeadMainBody } from "./Body.styles";
 
 export {
-    Body, HomeBody, AboutBody
+    Body, HomeBody, GeneralBody, HeadMainBody
 }
