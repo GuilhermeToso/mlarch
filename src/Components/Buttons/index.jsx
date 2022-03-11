@@ -1,3 +1,4 @@
-import { Button, GetStarted, LearnMore } from "./Buttons.styles";
+import { HomeButton, GetStarted, LearnMore } from "./Buttons.styles";
+import { IconButton } from "./IconButton.styles";
 
-export {Button, GetStarted, LearnMore}
+export {HomeButton, GetStarted, LearnMore, IconButton}
